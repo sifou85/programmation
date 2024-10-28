@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تعليم CSS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_back" />
+    <style>
+        body {
+            font-family: 'Amiri', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      border: none;
+      border-radius: 10px;
+      margin: 20px 0;
+      background-color: #f9f9f9;
+      cursor: pointer;
+      transition: transform 0.3s, background-color 0.3s;
+    }
+    .section:hover {
+      background-color: #e0f7fa;
+      transform: scale(1.05);
+    }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        section {
+            background: white;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            direction: rtl; /* تأكيد اتجاه النص */
+        }
+        pre {
+            background-color: #eee;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #4CAF50;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>تعليم CSS بالعراقي</h1>
+</header>
+
+<div class="container">
+
+    <section id="lesson1">
+        <h2>درس 1: مقدمة عن CSS</h2>
+        <p>CSS (توزيع الأنماط المتعاقبة) تستخدم لتنسيق مظهر صفحات الويب. تسمح لك بتغيير الألوان، الخطوط، والتخطيطات.</p>
+    </section>
+
+    <section id="lesson2">
+        <h2>درس 2: كيفية ربط CSS بالـ HTML</h2>
+        <p>يمكنك ربط CSS بملف HTML باستخدام وسم <code>&lt;link&gt;</code> في قسم <code>&lt;head&gt;</code>:</p>
+        <pre><code>&lt;link rel="stylesheet" href="style.css"&gt;</code></pre>
+    </section>
+
+    <section id="lesson3">
+        <h2>درس 3: تحديد الألوان</h2>
+        <p>يمكنك تحديد الألوان باستخدام الأسماء، الأكواد السداسية، أو القيم RGB. مثال:</p>
+        <pre><code>color: #4CAF50;</code></pre>
+    </section>
+
+    <section id="lesson4">
+        <h2>درس 4: الخطوط</h2>
+        <p>يمكن تغيير الخط باستخدام خاصية <code>font-family</code>. مثال:</p>
+        <pre><code>font-family: 'Arial', sans-serif;</code></pre>
+    </section>
+
+    <section id="lesson5">
+        <h2>درس 5: تحديد الأحجام</h2>
+        <p>يمكنك تحديد حجم الخط باستخدام <code>font-size</code>. مثال:</p>
+        <pre><code>font-size: 16px;</code></pre>
+    </section>
+
+    <section id="lesson6">
+        <h2>درس 6: الهوامش والحشوات</h2>
+        <p>يمكن التحكم في الهوامش باستخدام <code>margin</code> والحشوات باستخدام <code>padding</code>. مثال:</p>
+        <pre><code>margin: 10px; padding: 20px;</code></pre>
+    </section>
+
+    <section id="lesson7">
+        <h2>درس 7: الخلفيات</h2>
+        <p>يمكنك تعيين خلفيات للعناصر باستخدام خاصية <code>background</code>. مثال:</p>
+        <pre><code>background-color: lightblue;</code></pre>
+    </section>
+
+    <section id="lesson8">
+        <h2>درس 8: الفلاتر والظل</h2>
+        <p>يمكن إضافة تأثيرات الظل باستخدام خاصية <code>box-shadow</code>. مثال:</p>
+        <pre><code>box-shadow: 2px 2px 5px #aaa;</code></pre>
+    </section>
+
+    <section id="lesson9">
+        <h2>درس 9: قوائم التنقل</h2>
+        <p>تستخدم قوائم التنقل لتوجيه الزوار بين الصفحات. مثال على قائمة بسيطة:</p>
+        <pre><code>
+<ul>
+    <li><a href="#">الرئيسية</a></li>
+    <li><a href="#">عن الموقع</a></li>
+    <li><a href="#">تواصل معنا</a></li>
+</ul>
+        </code></pre>
+    </section>
+
+    <section id="lesson10">
+        <h2>درس 10: تصميم الزر</h2>
+        <p>يمكن تصميم الأزرار باستخدام CSS. مثال:</p>
+        <pre><code>
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+        </code></pre>
+    </section>
+
+    <section id="lesson11">
+        <h2>درس 11: التصميم المتجاوب</h2>
+        <p>يساعد التصميم المتجاوب في جعل الموقع يتناسب مع جميع أحجام الشاشات باستخدام <code>@media</code>.</p>
+        <pre><code>
+@media (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}
+        </code></pre>
+    </section>
+
+    <section id="lesson12">
+        <h2>درس 12: الأنيميشن في CSS</h2>
+        <p>يمكن إضافة الحركة للعناصر باستخدام خاصية <code>animation</code>. مثال:</p>
+        <pre><code>
+@keyframes mymove {
+    from {top: 0px;}
+    to {top: 200px;}
+}
+
+.animated {
+    position: relative;
+    animation: mymove 2s;
+}
+        </code></pre>
+    </section>
+
+    <section id="lesson13">
+        <h2>درس 13: استخدام Flexbox</h2>
+        <p>Flexbox يجعل من السهل تنظيم العناصر في صفوف أو أعمدة. مثال:</p>
+        <pre><code>
+.container {
+    display: flex;
+}
+        </code></pre>
+    </section>
+
+    <section id="lesson14">
+        <h2>درس 14: استخدام Grid Layout</h2>
+        <p>Grid Layout يوفر نظام شبكي لتنسيق العناصر بشكل احترافي. مثال:</p>
+        <pre><code>
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+        </code></pre>
+    </section>
+
+    <section id="lesson15">
+        <h2>درس 15: أدوات التطوير في المتصفح</h2>
+        <p>تساعد أدوات التطوير على فحص العناصر وتعديلها مباشرة في المتصفح.</p>
+    </section>
+
+    <section id="lesson16">
+        <h2>درس 16: الشفافية</h2>
+        <p>يمكن تعديل شفافية العناصر باستخدام خاصية <code>opacity</code>. مثال:</p>
+        <pre><code>opacity: 0.5;</code></pre>
+    </section>
+
+    <section id="lesson17">
+        <h2>درس 17: استخدام الصور</h2>
+        <p>يمكن تخصيص الصور باستخدام خاصية <code>background-image</code>. مثال:</p>
+        <pre><code>
+background-image: url('image.jpg');
+        </code></pre>
+    </section>
+
+    <section id="lesson18">
+        <h2>درس 18: تصميم بطاقات</h2>
+        <p>تستخدم البطاقة لتجميع المحتوى بشكل منظم. مثال:</p>
+        <pre><code>
+.card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+}
+        </code></pre>
+    </section>
+
+    <section id="lesson19">
+        <h2>درس 19: استجابة التصميم</h2>
+        <p>تصميم يستجيب لمقاسات الشاشات المختلفة باستخدام وحدات مرنة مثل النسبة المئوية.</p>
+    </section>
+
+    <section id="lesson20">
+        <h2>درس 20: استخدام المتغيرات في CSS</h2>
+        <p>يمكن استخدام المتغيرات لتسهيل إدارة الألوان والخطوط. مثال:</p>
+        <pre><code>
+:root {
+    --main-color: #4CAF50;
+}
+
+body {
+    background-color: var(--main-color);
+}
+        </code></pre>
+    </section>
+</div>
+<div class="section" onclick="window.location.href='index.html'">
+      <span class="material-symbols-outlined">
+arrow_back
+</span>
+      <span class="section-title">رجوع</span>
+    </div>
+<footer>
+    <p>جميع الحقوق محفوظة &copy; 2025</p>
+</footer>
+
+</body>
+</html>
+            

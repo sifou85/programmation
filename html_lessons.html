@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تعليم HTML</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_back" />
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #f0f4f8; 
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #009688; 
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      border: none;
+      border-radius: 10px;
+      margin: 20px 0;
+      background-color: #f9f9f9;
+      cursor: pointer;
+      transition: transform 0.3s, background-color 0.3s;
+    }
+    .section:hover {
+      background-color: #e0f7fa;
+      transform: scale(1.05);
+    }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            transition: color 0.3s; 
+        }
+        nav a:hover {
+            color: #ffeb3b; 
+        }
+        section {
+            padding: 20px;
+            background-color: #ffffff; 
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            text-align: center; 
+        }
+        h2 {
+            color: #00796b; 
+            margin-bottom: 15px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #009688; 
+            color: white;
+            position: relative; 
+        }
+        .lessons {
+            width: 80%; 
+            margin: 0 auto; 
+        }
+        .sidebar {
+            float: left;
+            width: 20%; 
+            padding: 20px;
+            background-color: #e0f7fa; 
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-right: 20px;
+        }
+        .clearfix {
+            clear: both; 
+        }
+        ul {
+            list-style-type: none; 
+            padding: 0; 
+        }
+        li {
+            margin: 10px 0; 
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>موقع تعليم HTML</h1>
+    <nav>
+        <a href="#intro">مقدمة</a>
+        <a href="#lessons">الدروس</a>
+    </nav>
+</header>
+
+
+
+    <div class="lessons">
+        <section id="intro">
+            <h2>مقدمة</h2>
+            <p>HTML هي لغة ترميز تستخدم لإنشاء صفحات الويب. تعتبر أساسية لتصميم المواقع الإلكترونية، وتساعدك على هيكلة المحتوى بطريقة مفهومة.</p>
+        </section>
+
+        <section id="lesson1">
+            <h2>درس 1: مقدمة عن HTML</h2>
+            <p>في هذا الدرس، سنتعرف على مفهوم HTML ولماذا هي مهمة في تطوير الويب.</p>
+        </section>
+
+        <section id="lesson2">
+            <h2>درس 2: بنية HTML</h2>
+            <p>تتكون صفحات HTML من عناصر وعلامات. يجب أن تبدأ كل صفحة بـ <code>&lt;!DOCTYPE html&gt;</code>، يليها عنصر <code>&lt;html&gt;</code> الذي يحتوي على رأس <code>&lt;head&gt;</code> وجسم <code>&lt;body&gt;</code>.</p>
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;عنوان الصفحة&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        محتوى الصفحة هنا
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        </section>
+
+        <section id="lesson3">
+            <h2>درس 3: علامات HTML الأساسية</h2>
+            <p>هناك العديد من العلامات المهمة في HTML، مثل:</p>
+            <ul>
+                <li><code>&lt;p&gt;</code>: لكتابة فقرة.</li>
+                <li><code>&lt;a&gt;</code>: لإنشاء روابط.</li>
+                <li><code>&lt;img&gt;</code>: لإضافة صور.</li>
+                <li><code>&lt;div&gt;</code>: لتقسيم المحتوى.</li>
+                <li><code>&lt;h1&gt; إلى &lt;h6&gt;</code>: لتحديد العناوين.</li>
+            </ul>
+        </section>
+
+        <section id="lesson4">
+            <h2>درس 4: الروابط</h2>
+            <p>يمكنك إنشاء روابط باستخدام علامة <code>&lt;a&gt;</code> كالتالي:</p>
+            <pre><code>&lt;a href="https://www.example.com"&gt;اذهب إلى Example&lt;/a&gt;</code></pre>
+        </section>
+
+        <section id="lesson5">
+            <h2>درس 5: الصور</h2>
+            <p>لإضافة صورة، استخدم علامة <code>&lt;img&gt;</code>:</p>
+            <pre><code>&lt;img src="رابط_الصورة.jpg" alt="وصف الصورة"&gt;</code></pre>
+        </section>
+
+        <section id="lesson6">
+            <h2>درس 6: القوائم</h2>
+            <p>يمكنك إنشاء قوائم باستخدام العلامات التالية:</p>
+            <pre><code>&lt;ul&gt; ... &lt;/ul&gt;  // قائمة غير مرتبة
+&lt;ol&gt; ... &lt;/ol&gt;  // قائمة مرتبة</code></pre>
+        </section>
+
+        <section id="lesson7">
+            <h2>درس 7: الجداول</h2>
+            <p>لإنشاء جدول، استخدم العلامات التالية:</p>
+            <pre><code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;عنوان العمود&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;بيانات&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+        </section>
+
+        <section id="lesson8">
+            <h2>درس 8: النماذج</h2>
+            <p>لإنشاء نموذج، يمكنك استخدام العلامات التالية:</p>
+            <pre><code>&lt;form&gt;
+    &lt;input type="text" placeholder="ادخل اسمك"&gt;
+    &lt;input type="submit" value="إرسال"&gt;
+&lt;/form&gt;</code></pre>
+        </section>
+
+        <section id="lesson9">
+            <h2>درس 9: العناوين</h2>
+            <p>تستخدم العلامات <code>&lt;h1&gt;</code> إلى <code>&lt;h6&gt;</code> لتحديد العناوين المختلفة في الصفحة:</p>
+            <pre><code>&lt;h1&gt;عنوان رئيسي&lt;/h1&gt;</code></pre>
+        </section>
+
+        <section id="lesson10">
+            <h2>درس 10: التعليقات</h2>
+            <p>يمكنك إضافة تعليقات داخل HTML باستخدام:</p>
+            <pre><code>&lt;!-- هذا تعليق --&gt;</code></pre>
+            <p>لن يتم عرض التعليقات في المتصفح، لكنها مفيدة لكتابة ملاحظات في الكود.</p>
+        </section>
+    </div>
+</div>
+<div class="section" onclick="window.location.href='index.html'">
+      <span class="material-symbols-outlined">
+arrow_back
+</span>
+      <span class="section-title">رجوع</span>
+    </div>
+<footer>
+    <p>جميع الحقوق محفوظة &copy; 2025</p>
+</footer>
+
+</body>
+</html>
